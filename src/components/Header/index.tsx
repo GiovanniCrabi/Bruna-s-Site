@@ -1,8 +1,12 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import {  Flex, Icon, IconButton, Link, Text } from "@chakra-ui/react";
 import { Logo } from "./Logo";
+import { RiMenuLine } from 'react-icons/ri';
+import { useSidebarDrawer } from "../contexts/SidebarDrawerContext";
 
 
 export function Header() {
+  const { onOpen } = useSidebarDrawer();
+
   return (
   <>
     <Flex
@@ -11,11 +15,13 @@ export function Header() {
     justifyContent='center'
     alignItems='center'
     textAlign='center'
-    h='10'
+    h={50}
     bg='#8aa07c' 
     >
       <Text 
-        fontSize={[15,20]}>
+        fontSize={[15,20]}
+        maxH='90%'
+      >
          ENVIO GRÁTIS PARA PEDIDOS ACIMA DE R$300
       </Text>
     </Flex>
@@ -30,6 +36,15 @@ export function Header() {
           align='center'
           bg='green.100'
         >
+          <IconButton
+              aria-label="Open navigation"
+              icon={<Icon as={RiMenuLine} />}
+              fontSize="24"
+              variant="unstyled"
+              onClick={onOpen}
+              mr="2"
+            >
+            </IconButton>
           <Logo />
         </Flex>
     </Flex>
