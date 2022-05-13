@@ -14,7 +14,7 @@ export function Logo() {
       justifyContent='center'
       alignItems='center'
     >
-        <Flex>
+        <Flex justifyContent='center' >
           <Link>
             <Image 
               src="/images/logo.svg" 
@@ -23,7 +23,7 @@ export function Logo() {
               />
           </Link>
         </Flex>
-        <Flex marginLeft='80px'>
+        <Flex marginLeft='4'>
        
           {isWideVersion &&  
             <Text

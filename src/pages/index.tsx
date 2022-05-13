@@ -1,15 +1,21 @@
-import { Flex } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import { Header } from "../components/Header";
+import { Products } from "../components/Products";
 import { Sidebar } from "../components/SideBar";
 
 export default function Home() {
   return (
-    <Flex flexDirection='column' h='100vh'>
+    <Box> 
+      <Flex flexDirection='column'>
       <Header />
+
       <Sidebar />
-      <Flex>
-     
-      </Flex>
     </Flex>
+
+      
+    <Products />
+
+    </Box>
+    
   )
 }
