@@ -1,6 +1,7 @@
 import { Drawer, DrawerBody, DrawerCloseButton, DrawerOverlay, DrawerContent, DrawerHeader } from "@chakra-ui/react";
-import { useSidebarDrawer } from "../contexts/SidebarDrawerContext";
+import { useSidebarDrawer } from "../../contexts/SidebarDrawerContext";
 import { NavLink } from "./NavLink";
+import { SidebarNav } from "./SidebarNav";
 
 
 export function Sidebar() {
@@ -14,10 +15,8 @@ export function Sidebar() {
           <DrawerHeader>O que você procura? </DrawerHeader>
           <DrawerBody>
 
-            <NavLink title="Produtos"/>
-            <NavLink title="Sobre"/>
-            <NavLink title="Contato"/>
-            <NavLink title="Trocas e devoluções"/>
+            <SidebarNav />
+
           </DrawerBody>
         </DrawerContent>
       </DrawerOverlay>

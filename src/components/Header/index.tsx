@@ -1,7 +1,7 @@
 import {  Flex, Icon, IconButton, Link, Text } from "@chakra-ui/react";
 import { Logo } from "./Logo";
 import { RiMenuLine } from 'react-icons/ri';
-import { useSidebarDrawer } from "../contexts/SidebarDrawerContext";
+import { useSidebarDrawer } from "../../contexts/SidebarDrawerContext";
 
 
 export function Header() {
