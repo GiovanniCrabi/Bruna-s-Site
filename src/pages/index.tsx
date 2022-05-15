@@ -75,18 +75,18 @@ export default function Home() {
 
           <Flex mt='8'>
             <Flex flexDir='column'>
-              <Box maxW='90%' alignSelf='center' textAlign='center'>
-                <Text  fontSize='16px'><strong>PRATINHOS DE MADEIRA COM VENTOSA</strong></Text>
-                <Text mt='4' fontSize='20px'> Nossos pratinhos ecológicos vem com uma ventosa que o prende a superfície permitindo que seu bebê explore sozinho os alimentos sem que acabe tudo indo para o chão.  </Text>
+              <Box alignSelf='center' textAlign='center'>
+                <Text fontSize='16px'><strong>PRATINHOS DE MADEIRA COM VENTOSA</strong></Text>
+                <Text mt='4' fontSize='16px'> Nossos pratinhos ecológicos vem com uma ventosa que o prende a superfície permitindo que seu bebê explore sozinho os alimentos sem que acabe tudo indo para o chão.  </Text>
 
-                <Box mt='8' w='90%' margin='0 auto'>
+                <Flex mt='8' w='90%' margin='0 auto'>
                   <Image
                     src='/images/pratinho.png'
                     alt='pratinho'
                     width='300px'
                     height='300px'
                   />
-                </Box>
+                </Flex>
 
                 <Button
                   alignSelf='center'
@@ -101,8 +101,8 @@ export default function Home() {
                   Compre já
                 </Button>
               </Box>
-           
-             
+
+
 
             </Flex>
           </Flex>
@@ -110,8 +110,8 @@ export default function Home() {
           <Divider mt='20' />
 
           <Flex mt='8'>
-            <Flex  flexDir='column'>
-            <Box maxW='90%' alignSelf='center' textAlign='center'>
+            <Flex flexDir='column'>
+              <Box maxW='90%' alignSelf='center' textAlign='center'>
                 <Text fontSize='16px'><strong>CAIXA DE FERRAMENTAS</strong></Text>
                 <Text mt='4' fontSize='16px'> Permita que seu filho tenha um excelente trabalho com a coordenação motora </Text>
 
@@ -139,7 +139,30 @@ export default function Home() {
 
             </Flex>
           </Flex>
+          <Flex flexDir='column' mt='20'>
+          <Image
+            src='/images/logo2.png'
+            width='150px'
+            height='150px'
+          />
 
+          <Flex flexDir='column' textAlign='center'>
+            <Text fontSize='30px'> <strong> CONTATOS </strong></Text>
+            <Flex flexDir='column'>
+              <Stack spacing='5' mt='10'>
+                <Link href='https://www.instagram.com/babywoodstore/' isExternal>
+                  <Icon as={AiOutlineInstagram} fontSize='20'></Icon>
+                </Link>
+                <Link as='a' href='mailto:babywoodstore@gmail.com' isExternal>
+                  <Icon as={AiOutlineMail} fontSize='20'>  </Icon>
+                </Link>
+              </Stack>
+              <Divider mt='10'/>
+            </Flex>
+            <Flex>
+            </Flex>
+          </Flex>
+        </Flex> 
         </Flex>
       </Box>
     )
@@ -276,32 +299,33 @@ export default function Home() {
 
         </Flex>
 
-        <Divider mt='10'/>
-        
-        <Flex mt='10' flexDir='column' textAlign='center'>
-          <Text fontSize='30px'> <strong> CONTATOS </strong></Text>
-          <Flex flexDir='column'>
-            <Stack spacing='5' mt='10'>
-              <Link href='https://www.instagram.com/babywoodstore/' isExternal>
-                <Icon as={AiOutlineInstagram} fontSize='20'></Icon>
-              </Link>
+        <Divider mt='10' />
 
-              <Link as='a' href='mailto:babywoodstore@gmail.com' isExternal>
-                <Icon as={AiOutlineMail} fontSize='20'>  </Icon>
-              </Link>
-            </Stack>
-         
-          </Flex>
-          <Flex>
+        <Flex justifyContent='space-around' mt='10'>
+          <Image
+            src='/images/logo2.png'
+            width='150px'
+            height='150px'
+          />
 
+          <Flex flexDir='column' textAlign='center'>
+            <Text fontSize='30px'> <strong> CONTATOS </strong></Text>
+            <Flex flexDir='column'>
+              <Stack spacing='5' mt='10'>
+                <Link href='https://www.instagram.com/babywoodstore/' isExternal>
+                  <Icon as={AiOutlineInstagram} fontSize='20'></Icon>
+                </Link>
+                <Link as='a' href='mailto:babywoodstore@gmail.com' isExternal>
+                  <Icon as={AiOutlineMail} fontSize='20'>  </Icon>
+                </Link>
+              </Stack>
+            </Flex>
+            <Flex>
+            </Flex>
           </Flex>
-        
         </Flex>
-        
+        <Divider mt='10'/>
       </Box>
-
-   
-
     </Box>
   )
 }
