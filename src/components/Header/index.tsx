@@ -31,12 +31,12 @@ export function Header() {
           w='100%'
           maxWidth={1480}
           h='20vh'
-          mx='auto'
           px='6'
           align='center'
           bg='green.100'
         >
           <IconButton
+              mt='4'
               aria-label="Open navigation"
               icon={<Icon as={RiMenuLine} />}
               fontSize="24"
