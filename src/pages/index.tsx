@@ -1,7 +1,9 @@
-import { Box, Button, Divider, Flex, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Button, Divider, Flex, Icon, Link, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
 import Image from "next/image";
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/SideBar";
+
+import { AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
 
 
 export default function Home() {
@@ -143,6 +145,8 @@ export default function Home() {
     )
   }
 
+  //Widescreen
+
   return (
     <Box>
       <Box>
@@ -150,9 +154,7 @@ export default function Home() {
         <Sidebar />
       </Box>
 
-
-
-      <Flex bg='green.100' mt='0.5'>
+      <Box bg='green.100' mt='0.5'>
         <Flex
           flexDirection='column'
           alignItems='center'
@@ -273,9 +275,32 @@ export default function Home() {
           </Flex>
 
         </Flex>
-      </Flex>
 
+        <Divider mt='10'/>
+        
+        <Flex mt='10' flexDir='column' textAlign='center'>
+          <Text fontSize='30px'> <strong> CONTATOS </strong></Text>
+          <Flex flexDir='column'>
+            <Stack spacing='5' mt='10'>
+              <Link href='https://www.instagram.com/babywoodstore/' isExternal>
+                <Icon as={AiOutlineInstagram} fontSize='20'></Icon>
+              </Link>
 
+              <Link as='a' href='mailto:babywoodstore@gmail.com' isExternal>
+                <Icon as={AiOutlineMail} fontSize='20'>  </Icon>
+              </Link>
+            </Stack>
+         
+          </Flex>
+          <Flex>
+
+          </Flex>
+        
+        </Flex>
+        
+      </Box>
+
+   
 
     </Box>
   )
