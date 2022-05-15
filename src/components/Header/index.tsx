@@ -22,7 +22,7 @@ export function Header() {
         fontSize={[15,20]}
         maxH='90%'
       >
-         ENVIO GRÁTIS PARA PEDIDOS ACIMA DE R$300
+          APRENDER BRINCANDO
       </Text>
     </Flex>
     

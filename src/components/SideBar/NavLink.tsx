@@ -1,4 +1,4 @@
-import { Box, Stack, Text, Link } from "@chakra-ui/react";
+import { Text, Link } from "@chakra-ui/react";
 import { ActiveLink } from "../ActiveLink";
 
 interface NavLinkProps {
@@ -10,7 +10,7 @@ export function NavLink({ children, href, ...rest }: NavLinkProps) {
   return (
       <ActiveLink href={href}>
         <Link display='flex' alignItems='center' {...rest}>
-          <Text> {children} </Text> 
+          <Text fontSize='lg'> {children} </Text> 
         </Link>
       </ActiveLink>
   )

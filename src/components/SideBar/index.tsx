@@ -13,7 +13,7 @@ export function Sidebar() {
         <DrawerContent bg="green.100" p="4">
           <DrawerCloseButton mt="6" />
           <DrawerHeader>O que você procura? </DrawerHeader>
-          <DrawerBody>
+          <DrawerBody mt='10'>
 
             <SidebarNav />
 

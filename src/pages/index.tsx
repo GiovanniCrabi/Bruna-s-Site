@@ -17,7 +17,7 @@ export default function Home() {
         <Header />
         <Sidebar />
          <Flex flexDirection='column' mt='4'>
-           <Stack spacing='2'>
+           <Stack spacing='4'>
               <Text 
                   maxW='240px'
                   textAlign='center'
@@ -25,18 +25,31 @@ export default function Home() {
                   fontSize='15px'
                   bg='green.100'
                 > 
-                    Brinquedos e acessórios ecológicos para o seu bebê aprender brincando
+                    Brinquedos e acessórios ecológicos para aprender brincando
                   
                 </Text>
 
                 <Box>
                   <Image 
-                      
+                  
                       src='/images/kidding.webp' 
                       alt="kidding"
                       width='940px'
                       height='500px'
                   /> 
+
+                   
+                </Box>
+                <Box>
+                  <Text 
+                    textAlign='center'
+                    width='300px'
+                    bg='#8aa07c'
+                    margin= '0 auto'
+                    fontSize='20px'
+                  > 
+                      JUNTOS POR MAIS DIVERSÃO
+                  </Text>
                 </Box>
 
                 <Button 
@@ -84,8 +97,20 @@ export default function Home() {
           bg='green.100'
         > 
           
-            Brinquedos e acessórios ecológicos para o seu bebê aprender brincando
+            Brinquedos e acessórios ecológicos para aprender brincando
           
+        </Text>
+
+        <Text 
+          position='absolute'
+          textAlign='center'
+          width='300px'
+          bg='#8aa07c'
+          marginX='850'
+          mt='50'
+          fontSize='30px'
+        > 
+          JUNTOS POR MAIS DIVERSÃO
         </Text>
         
         <Button 
