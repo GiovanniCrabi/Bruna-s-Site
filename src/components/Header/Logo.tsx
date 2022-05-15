@@ -13,9 +13,10 @@ export function Logo() {
         <Flex justifyContent='center' >
             <Link>
               <Image 
-                src="/images/logo.svg" 
+                src="/images/logo.png" 
                 alt='Logo' 
                 h={20}
+                w={60}
                 />
             </Link>
           </Flex>
